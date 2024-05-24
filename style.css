@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(2, 6, 23);
+  overflow-x: hidden;
+}
+header {
+  height: 50px;
+  display: flex;
+  background-color: #020617;
+  border-bottom: solid 2px #120b30;
+  align-items: center;
+}
+.header-text {
+  border: 10px;
+  color: #64748b;
+}
+.herder-buttons {
+  display: flex;
+  gap: 5px;
+  flex-direction: row-reverse;
+}
+.btn-primary {
+  background-color: #7634d9 !important;
+  border-color: #7634d9 !important;
+}
+
+.Kickstart {
+  background-image: url(img/Block-Background.png);
+  background-size: 60px;
+  color: #64748b;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 300px;
+  padding: 50px 0px;
+  margin: 0px 25px 25px 25px;
+}
+.text-container {
+  display: grid;
+  justify-items: center;
+  width: 620px;
+  text-align: center;
+  gap: 20px;
+  /* box-shadow: 4px 169px 168px 200px rgba(2,6,23,1);
+-webkit-box-shadow: 4px 169px 168px 200px rgba(2,6,23,1);
+-moz-box-shadow: 4px 169px 168px 200px rgba(2,6,23,1); */
+  /*Will use later*/
+}
+#modern-design {
+  color: #7634d9;
+  border: 1px solid #7634d9;
+  padding: 5px 10px 5px 10px;
+  border-radius: 100px;
+}
+
+.Scrolling-Images {
+  height: 550px;
+}
+.album {
+  display: flex;
+  gap: 90px;
+  position: absolute;
+  animation: move-left 20s /*delai*/ linear infinite;
+}
+.album1 {
+  display: flex;
+  gap: 90px;
+  position: absolute;
+  animation: move-left1 20s /*delai*/ linear infinite;
+}
+.album2and3 {
+  padding-top: 270px;
+}
+.album2 {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  animation: move-right 20s /*delai*/ linear infinite;
+}
+.album3 {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  animation: move-right1 20s /*delai*/ linear infinite;
+}
+@keyframes move-left {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes move-left1 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes move-right {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+@keyframes move-right1 {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+.image-scroll {
+  width: 375px;
+}
+.Blocks {
+  padding: 100px 0px;
+  height: 400px;
+}
+.Block {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 190px;
+  border-radius: 20px;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  transition: transform 500ms ease;
+}
+.icon-block {
+    margin-bottom: 20px;
+    width: 40px;
+  }
+.Block:hover{
+    
+    transform: translateY(-10px);
+}
+@keyframes little-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
