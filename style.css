@@ -54,6 +54,7 @@ header {
 }
 
 .Scrolling-Images {
+  margin-top: 100px;
   height: 550px;
 }
 .album {
@@ -126,25 +127,78 @@ header {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  height: 190px;
+  height: auto;
   border-radius: 20px;
   border: 1px solid #334155;
   background-color: #1e293b;
   transition: transform 500ms ease;
 }
 .icon-block {
-    margin-bottom: 20px;
-    width: 40px;
-  }
-.Block:hover{
-    
-    transform: translateY(-10px);
+  margin-bottom: 20px;
+  width: 40px;
 }
-@keyframes little-up {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-10px);
-  }
+.Block:hover {
+  transform: translateY(-10px);
+}
+
+.Stunning {
+  padding: 80px 0px 80px 0px;
+  display: flex;
+  align-items: center;
+  background-color: #0f172a;
+  flex-direction: column;
+}
+.Stuning-Box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.Stuning-Grid-Container{
+  display: flex;
+  justify-content: center;
+}
+.Stuning-Grid{
+  justify-content: center;
+  display: grid;
+  gap: 30px;
+  width: 100%;
+  grid-template-columns: 1FR 1FR 1FR;
+  grid-template-rows: repeat(3, 1FR);
+}
+.Stuning-Image{
+  transition: transform 500ms ease;
+  width: 410px;
+  height: 260px;
+}
+.Stuning-Image:hover {
+  transform: translateY(-10px);
+}
+
+.white-thing{
+  background-color: white;
+  padding: 60px 0px 40px 0px;
+}
+.White-line{
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Block-Themed{
+  background-color: #020617;
+  padding: 80px 0px 80px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Newsletter{
+  padding: 80px 0px 80px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0F172A;
 }
